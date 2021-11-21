@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>ALKTecnologia</title>
+		<meta charset="utf-8">
+			<link rel="stylesheet" type="text/css" href="estilo.css">
+      <style>
+        .espaco{margin: 20px;}
+      </style>
+</head>
+   <header>
+   	     <marquee> <center>  ALKTecnologia </center> </marquee>
+   	   <div class="menu">
+    <ul>
+		<li><a href="https://www.microlins.com.br/">Microlins</a> </li>
+		 <li><a href="http://www.pbpatobranco.seed.pr.gov.br/modules/conteudo/conteudo.php?conteudo=25">Tec.Informatica</a> </li>
+    <li><a href="https://www.facebook.com/preparapb/"> prepara Cursos </a></li>
+        <li><a href="https://www.udemy.com/">Udemy</a></li>
+            <li><a href="https://www.schoolofnet.com/curso/git/controle-de-versao/git-e-github/">schoolofnet</a></li>   
+               
+    </ul>
+</div>   	
+       </header>
+<body>
+	 <div class="corpo">
+	 	<h1><center>Tecnologia</center></h1>
+		<h2></h2>
+	 	<p> <a href="https://pt.m.wikipedia.org/wiki/Ficheiro:AJAX_logo_by_gengns.svg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/AJAX_logo_by_gengns.svg/2560px-AJAX_logo_by_gengns.svg.png"VSPACE=10 HSPACE=20 ALIGN="left" width=250px height=500px ></a><b> Ajax</b> <br>
+            Devido a necessidade de entender um pouco mais sobre Ajax fui atras de conteudo na internet... 
+            canal do  <a href="https://www.youtube.com/playlist?list=PLXik_5Br-zO9hDBdGmzX5XJ9LT6IcHPiG"> João Ribeiro</a>
+            # 01-Introdução: <br>
+            Asynchronous JavaScript e XML: <br>
+            $ não é uma linguagem de programação; <br>
+            $ técnica de programação em JavaScript;
+            $ Receber enviar dados para o servidor de forma assíncrona; <br> 
+            $ Através do DOM,atualiza a página web sem ter que recarregar. <br> 
+              
+             @ Browser <br> 
+              An event occurs... <br> 
+             * Create an XMLHttpRequest object <br> 
+             * Send HttpRequest <br> 
+                     ===============> Internet =================>  <br> 
+                                     @@ Server <br> 
+                                * Process HttpRequest <br> 
+                             * Create a response and send data back to the Browser  <br> 
+                   <================= Internet =================     <br> 
+            @ Browser
+            * Process the returned data using JavaScript <br>
+            * Update page content <br>
+            ++++++++++++++++++++++++++++++++++++++++++próprio vídeo++++++++++++++++++++++++++++<br>
+            window.onload = function(){   <br>
+                document.getElementById('btn').addEventListener('click', btn_click); <br> 
+            }  <br> 
+             function btn_click() {  <br>
+                 //document.getElementById('caixa').innerHTML = 'Teste...';  <br>
+                 // ajax <br>
+                 // Objeto request <br>
+                 let pedido = new XMLHttpRequest();  <br>
+                 // função <br> 
+                 pedido.onreadystatechange = function(){   <br> 
+                     document.getElementById('caixa').innerHTML = this.responseText;  <br>
+                 }      <br>
+                 pedido.open("GET",  "dados.txt",  true); <br> 
+                 pedido.send(); <br>
+            
+             } <br>            
+  ***********************************próprio vídeo++++++++++++++++++++++++++++++++++++  <br>
+            # 03- O Objeto XMLHttpRequest: <br>
+               * explica o que significa sobre ajax; <br>
+               * explica baseado no site <a href="https://www.w3schools.com/js/js_ajax_intro.asp"> ajax c js </a> <br>
+               <br> 
+------------------------------------------próprio vídeo------------------------------------- <br>
+ # 04- Acrescenta controle no pedido: <br>
+   * document.getElementById('caixa').innerHTML = this.responseText;  <br>
+  * document.getElementById('caixa').innerHTML = pedido.responseText; <br>
+
+               <div id="caixa" class="espaco" > Praticando Ajax... </div>
+  <button id="btn" class="espaco" > click </button> <br>
+    
+    <b>Aulas Próximas:</b> <br>
+    <ul>
+      <li><a href="fca.html">função</a> CallBack com Ajax...</li> <br>
+      <li><a href="ajax_xml.html"> ajax e xml </a> aula. </li> <br>
+      <li><a href="aj_jQ.html">a.jq</a> Ajax via jQuery  </li> <br> 
+      <li><a href="formulario_app.html">formulario</a></li>
+
+    </ul>
+	 	</p>  
+	 </div>
+	 <br>
+   <script src="main.js"></script>
+	
+</body> 
+  <footer> 
+  		  
+  	 <div class="rodape">
+            <ul><li><a href="https://www.facebook.com/">facebook</a></li>
+            <li><a href="https://www.youtube.com/">you tube</a></li>
+            <li><a href="https://web.whatsapp.com/">whats</a></li>
+            <li><a href="https://mail.google.com/mail/u/0/?tab=wm&ogbl#inbox">e-mail</a></li>
+        </ul>
+  	 </div>
+  	 <marquee> <center> ALKTecnologia </center> </marquee>
+    </footer>
+</html>

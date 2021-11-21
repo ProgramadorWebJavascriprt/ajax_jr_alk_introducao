@@ -1,0 +1,5 @@
+testando...document.getElementById('caixa').innerHTML = this.responseText;
+         document.getElementById('caixa').innerHTML = pedido.responseText;
+
+
+
